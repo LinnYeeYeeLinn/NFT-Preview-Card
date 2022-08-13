@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .3s linear;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    flex-direction: column;
+    background-color: var(--very-dark-blue-main);
+    padding: 1rem;
+}
+.card{
+    width: 330px;
+    background-color: var(--very-dark-blue-card);
+    padding: 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.card-img{
+    width: 100%;
+    border-radius: .5rem;
+    height: 292.406px;
+}
+.card-body{
+    padding: 1rem 0 0 0;
+}
+.card-title{
+    font-size: 24px;
+    color: var(--white);
+}
+.card-text{
+    font-size: 18px;
+    color: var(--soft-blue);
+    margin: 1rem 0;
+    font-weight: normal;
+    line-height: 1.5;
+}
+.card-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.card-content img{
+    margin-right: 0.3rem;
+}
+.card-content-feature{
+    display: flex;
+    align-items: center;
+}
+.ethereum-text{
+    color: var(--cyan);
+}
+.clock-text{
+    color: var(--soft-blue);
+}
+.hr{
+    width: 100%;
+    height: 1px;
+    background-color: var(--very-dark-blue-line);
+    margin: 1rem 0;
+}
+.card-profile-img{
+    width: 38px;
+    aspect-ratio: 1/1;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    margin-right: 0.7rem;
+}
+.card-profile p{
+    font-size: 17px;
+    color: var(--soft-blue);
+    font-weight: normal;
+}
+.card-profile p span{
+    color: var(--white);
+}
+.attribution{
+    color: var(--white);
+    text-align: center;
+    padding: 0 1rem 0;
+    line-height: 1.6;
+}
+.card-title:hover, .card-profile p span:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+.view{
+    position: relative;
+}
+.view-overlay{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: hsla(178, 100%, 50%, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 292.406px;
+    cursor: pointer;
+    border-radius: .5rem;
+    opacity: 0;
+}
+.view-overlay:hover{
+    opacity: 1;
+}
+.attribution a{
+    color: var(--cyan);
+}
